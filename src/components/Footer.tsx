@@ -1,0 +1,18 @@
+import React from 'react';                                                                                                                                                                                          const Footer = () => {
+  return (
+    <footer className="bg-gray-800 text-white py-8">
+      <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between">                  <div className="sm:w-1/4 text-center sm:text-left mb-6 sm:mb-0">                                            <h2 className="text-lg font-bold mb-2">Company</h2>
+          <ul className="list-reset space-y-2">
+            <li><a href="#" className="text-gray-400 hover:text-gray-200">About</a></li>
+            <li><a href="#" className="text-gray-400 hover:text-gray-200">Blog</a></li>
+            <li><a href="#" className="text-gray-400 hover:text-gray-200">Jobs</a></li>                             </ul>                                                                                                   </div>                                                                                                    <div className="sm:w-1/4 text-center sm:text-left mb-6 sm:mb-0">                                            <h2 className="text-lg font-bold mb-2">Product</h2>                                                       <ul className="list-reset space-y-2">
+            <li><a href="#" className="text-gray-400 hover:text-gray-200">Features</a></li>                           <li><a href="#" className="text-gray-400 hover:text-gray-200">Pricing</a></li>                            <li><a href="#" className="text-gray-400 hover:text-gray-200">FAQ</a></li>                              </ul>                                                                                                   </div>                                                                                                    <div className="sm:w-1/4 text-center sm:text-left mb-6 sm:mb-0">                                            <h2 className="text-lg font-bold mb-2">Support</h2>                                                       <ul className="list-reset space-y-2">
+            <li><a href="#" className="text-gray-400 hover:text-gray-200">Help Center</a></li>                        <li><a href="#" className="text-gray-400 hover:text-gray-200">Contact Us</a></li>
+          </ul>                                                                                                   </div>                                                                                                    <div className="sm:w-1/4 text-center">
+          <h2 className="text-lg font-bold mb-2">Follow Us</h2>                                                     <ul className="list-reset space-y-2">
+            <li><a href="#" className="text-gray-400 hover:text-gray-200">Twitter</a></li>                            <li><a href="#" className="text-gray-400 hover:text-gray-200">Facebook</a></li>                           <li><a href="#" className="text-gray-400 hover:text-gray-200">Instagram</a></li>                        </ul>                                                                                                   </div>                                                                                                  </div>
+      <div className="container mx-auto py-4 text-center text-gray-400">
+        &copy; 2022 Company Name. All rights reserved.                                                          </div>                                                                                                  </footer>
+  );
+};                                                                                                        
+export default Footer;
