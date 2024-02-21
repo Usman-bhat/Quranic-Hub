@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: #111827;
+}
+fadeMe {
+  opacity: 0.7;
+  filter: alpha(opacity=20);
+  background-color: bg-gray-800;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+@font-face {
+  font-family: "sura_names";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("sura_names"),
+    url("/fonts/surahnames.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "arabicFont";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("sura_names"),
+    url("/fonts/arabicFont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Uthmanic";
+  font-style: normal;
+  src:
+    local("sura_names"),
+    url("/fonts/UthmanicHafs1Ver18.ttf") format("truetype");
+}
+
+.surahname {
+  font-family: "sura_names", sans-serif;
+}
+
+.arabicFont {
+  font-family: "arabicFont", sans-serif;
+}
+.quranFont {
+  font-family: "Uthmanic", sans-serif;
+}
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
