@@ -10,7 +10,7 @@ export async function Cards({ id }: { id: string }) {
     return items;
   }
   const items = await getData(id);
-  const [fontSize, setFontSize] = useState(30); // Default font size
+  const [fontSize, setFontSize] = useState(20); // Default font size
   const handleFontSizeChange = (size) => {
     setFontSize(size);
   };
