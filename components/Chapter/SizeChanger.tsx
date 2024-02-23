@@ -9,7 +9,7 @@ export default function SizeChanger({ onFontSizeChange, ayahCount }) {
 
   return (
     <>
-      <div className="fixed">
+      <div className="fixed z-10">
         <input
           type="checkbox"
           id="drawer-toggle"
