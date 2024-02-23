@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   generator: "QuranicHub",
   manifest: "/manifest.json",
   keywords: ['Quranic grammar', 'Nahw analysis', 'Arabic grammar', 'Quranic linguistics', 'Quranic syntax', 'Morphological analysis', 'Quranic language', 'Arabic syntax', 'Nahw principles', 'Linguistic analysis', 'Morphological breakdown', 'Arabic morphology', 'Quranic grammar guide', 'Nahw concepts', 'Quranic linguistic structure', 'Nahw tutorials', 'Arabic language analysis', 'Quranic grammar study', 'Linguistic principles', 'Quranic grammar resources'],
-  themeColor: [{ media: "(prefers-color-scheme: dark)", color: "#fff" }],
+ 
   authors: [
     {
       name: "Mohammad Usman" ,
@@ -20,8 +20,6 @@ export const metadata: Metadata = {
       url: "https://github.com/HASHIM-HAMEEM",
     },
   ],
-  viewport:
-    "minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover",
   icons: [
     { rel: "apple-touch-icon", url: "./apple-touch-icon.png" },
     { rel: "icon", url: "./icon-32x32.png" },
