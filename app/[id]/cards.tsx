@@ -4,7 +4,7 @@ import SurahCard from "@/components/Chapter/SurahCard";
 import SizeChanger from "@/components/Chapter/SizeChanger";
 
 export async function Cards({ id }) {
-  async function getData(id) {
+  async function getData(id:string) {
     const items = data.filter((item) => item.surah.toString() === id);
     return items;
   }
