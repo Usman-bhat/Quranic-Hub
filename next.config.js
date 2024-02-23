@@ -4,7 +4,7 @@ const withPWA = require("next-pwa")({
 });
 */
 const nextConfig = {
-  /*
+  
   images: {
     remotePatterns: [
       {
@@ -18,7 +18,7 @@ const nextConfig = {
   },
   eslint: {
     ignoreDuringBuilds: true,
-  },*/
+  },
 };
 
 module.exports = nextConfig;
