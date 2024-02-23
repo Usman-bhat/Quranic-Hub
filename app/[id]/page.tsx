@@ -8,12 +8,12 @@ import GotoAyah from "@/components/Chapter/gotoAyah";
 //import { useRouter } from "next/router";
 
 // ... (your existing imports)
-
+/*
 export async function generateStaticParams() {
   return data.map((item) => ({
     id: item.id.toString(),
   }));
-}
+}*/
 async function getData(id) {
   const items = data.filter((item) => item.surah.toString() === id);
   return items;
