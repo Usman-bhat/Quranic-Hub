@@ -3,7 +3,7 @@ import { data } from "./data"; // Adjust the import path based on your project s
 import SurahCard from "@/components/Chapter/SurahCard";
 import SizeChanger from "@/components/Chapter/SizeChanger";
 
-export async function Cards({ id }) {
+export async function Cards({ id }: { id: string }) {
   async function getData(id:string) {
     const items = data.filter((item) => item.surah.toString() === id);
     return items;
