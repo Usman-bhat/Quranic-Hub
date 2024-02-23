@@ -2,6 +2,7 @@
 import { data } from "./data"; // Adjust the import path based on your project structure
 import SurahCard from "@/components/Chapter/SurahCard";
 import SizeChanger from "@/components/Chapter/SizeChanger";
+import { useState } from "react";
 
 export async function Cards({ id }: { id: string }) {
   async function getData(id:string) {
