@@ -9,12 +9,12 @@ import type { Metadata } from 'next'
 //import { useRouter } from "next/router";
 
 // ... (your existing imports)
-/*
+
 export async function generateStaticParams() {
-  return data.map((item) => ({
+  return surahs.map((item) => ({
     id: item.id.toString(),
   }));
-}*/
+}
 export const metadata: Metadata = {
   title: 'AerabUlQuran',
   description: 'Embark on a captivating journey through the linguistic labyrinth of the Holy Quran with "aerabUlQuran." Delve into the intricate world of Nahw analysis, where every word is a revelation. Uncover the beauty of Quranic syntax and Arabic grammar, as you explore the profound depths of linguistic structure within the sacred text.',
