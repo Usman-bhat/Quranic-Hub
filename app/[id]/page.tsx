@@ -6,6 +6,8 @@ import NextSurah from "@/components/Chapter/nextSurah";
 import Footer from "@/components/Footer";
 import GotoAyah from "@/components/Chapter/gotoAyah";
 import type { Metadata } from 'next'
+import { Suspense } from 'react'
+
 //import { useRouter } from "next/router";
 
 // ... (your existing imports)
@@ -36,9 +38,11 @@ async function ItemPage({ params }) {
   return (
     <>
       <Navbar />
+      <Suspense>
       <GotoAyah ayahs={ayahs} />
       <SurahAerab data={items} ayahs={ayahs} />
       <NextSurah currentSurah={id} />
+      </Suspense>
       <Footer />
     </>
   );
