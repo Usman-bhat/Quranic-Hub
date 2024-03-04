@@ -1,9 +1,8 @@
 "use client";
 import SurahCard from "@/components/Chapter/SurahCard";
 import SizeChanger from "@/components/Chapter/SizeChanger";
-import { useState, useEffect } from "react";
+import { useState, useEffect,Suspense } from "react";
 import { useSearchParams } from "next/navigation";
-
 function SurahAerab({ data, ayahs }) {
   const [fontSize, setFontSize] = useState(30); // Default font size
   const handleFontSizeChange = (size) => {
@@ -24,6 +23,7 @@ function SurahAerab({ data, ayahs }) {
   }
   return (
     <>
+      <Suspense>
       <div className=" mt-6 items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-900">
         <SizeChanger
           onFontSizeChange={handleFontSizeChange}
@@ -44,6 +44,7 @@ function SurahAerab({ data, ayahs }) {
           </div>
         ))}
       </div>
+      </Suspense>
     </>
   );
 }
