@@ -13,8 +13,11 @@ import { Suspense } from 'react'
 // ... (your existing imports)
 
 export async function generateStaticParams() {
-  return surahs.map((item) => ({
+  /*return surahs.map((item) => ({
     id: item.id.toString(),
+  }));*/
+  return Array.from({ length: 115 }, (_, index) => ({
+    id: index.toString(),
   }));
 }
 export const metadata: Metadata = {
